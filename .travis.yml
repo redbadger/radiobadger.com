@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+- '0.10'
+branches:
+  only:
+  - master
+before_install:
+- cd generate; npm install; cd ..
+env:
+  global:
+  - S3_BUCKET=radiobadger.com
+  - secure: "SLKt7+kMJqpQeBbipBk7QaH1j2cFFRhCV4LA6WuLwHvcnfc101afmYdYR2i88VfOMHYUpl6gebkikBb/MQ1y+wd36UYYuqFKF2AS8zwGs8tqZ6hRyd42xlAxeWFSjjkxyB5KEjbz9G0X44ZX7y4L6syIoVZgb4/zH5BijCTA9ng="
+  - secure: "CJpsNi7RrOZqqZuqFWtM6GBTiklo9qoUjh0U6+dHe/Kaol7qYbY7TsCEyFmAMzXpULerBRsmDYHPnxobKj7j/Jryr92eahZTM2rC1qTDfPZkTlQGVH19QplL7TQDjX5SZioKLtIZw/M8Gm4CtHSNgl1FZW1+AV1UYVTfpgDyUb0="
+  - secure: "W+j+yVPJ8kHt/sPl52oNaBIOT24le2MJ/rBmOacaUaGhFDpBSIGAfI/9+8ORkoqDRBJ/GCMfZGybFYTvEf+3MrqnLZKCKpMY3l5w99eCoHSc+8SSAeTBXvqmMjwft8SuEOkwYtA6Kz4o0aUZgseXvyOfOAsiuovjzRmfnKOZ4Hk="
+script:
+- lsc generate/bin/generate.ls
+cache:
+  directories:
+  - generate/node_modules
+  - node_modules
+deploy:
+  provider: s3
+  bucket: radiobadger.com
+  skip_cleanup: true
+  local-dir: out
+  endpoint: radiobadger.com.s3-website-eu-west-1.amazonaws.com
+  region: eu-west-1
+  access_key_id:
+    secure: "Sx4ZojeVGwV8PwOK8lGQbEG6VzUXnTc/CkCuC6KoB+NOFKyceJNldCX1HGsOnUGxAqjfIe5MDEhE62gon/YLXL6DQmw8Uw2N3R7p9gja74NzlVuBIf4SSKtLUrVJzlbVuFbV86BVIRzvX/TQBqw6YsQl9Zm060ZkGAAnQnWdUfU="
+  secret_access_key:
+    secure: "XpmBAeUYwvRw3DuEfiWuXnEK88S6WY+QiIW1V+nT0Gbgbaa8M6DcwYrnAPA+ZJovnRnapOaDYMe/XXHwR+F5RL1t98LNZ2M+3zTmIL/2XonUWIHdOwf9GW6Sy24x01pAXknD/xVZOsXOUdVpIVlfS7Y06itAbKVa3Yv3VgmVTQs="

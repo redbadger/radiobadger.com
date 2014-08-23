@@ -1,0 +1,10 @@
+extends main
+
+block content
+
+  main.base
+    div.post-container
+      h4.title
+        | #{document.name}
+      div!= document.output
+

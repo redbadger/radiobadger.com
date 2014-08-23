@@ -1,0 +1,9 @@
+mixin postList(posts)
+  each post in posts
+    div.post-container
+      a.header-link(href=post.url)
+        h4.title!= post.title
+      div.post-preview!= post.preview
+      if post.readMore
+        div.read-more
+          a(href=post.url) Read more...

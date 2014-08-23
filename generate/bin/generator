@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+set -e
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+LSC=$DIR"/../node_modules/LiveScript/bin/lsc"
+$LSC $DIR"/generate.ls" "$@"

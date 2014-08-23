@@ -1,0 +1,13 @@
+*.js
+
+node_modules/
+generate/node_modules/
+
+out
+
+.DS_Store
+.npm_debug.log
+.bundle
+/vendor
+
+*.log

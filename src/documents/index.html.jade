@@ -1,0 +1,11 @@
+---
+name : index
+---
+
+extends ../layouts/main
+include ../layouts/mixins/postList
+
+block content
+  main.index-page
+    +postList(posts)
+

@@ -1,0 +1,29 @@
+{
+  "name": "generator",
+  "version": "0.0.1",
+  "description": "Extremely simple and flexible static site generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "generate": "bin/generate"
+  },
+  "author": "",
+  "dependencies": {
+    "LiveScript": "",
+    "bluebird": "",
+    "coffee-script": "",
+    "commander": "",
+    "debug": "",
+    "front-matter": "",
+    "jade": "",
+    "less": "",
+    "marked": "",
+    "mkdirp": "",
+    "ncp": "",
+    "prelude-ls": "",
+    "recursive-readdir": "",
+    "safeps": "^2.2.12",
+    "to-camel-case": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "alexsavin",
+  "version": "0.1.0",
+  "description": "Personal blog",
+  "dependencies": {
+    "LiveScript": "^1.2.0",
+    "bluebird": "",
+    "config": "",
+    "debug": "",
+    "diacritics": "",
+    "front-matter": "",
+    "http-proxy": "1.0.3",
+    "js-yaml": "",
+    "moment": "",
+    "prelude-ls": "1.0.3",
+    "prompt": "",
+    "require-dir": "",
+    "to-slug-case": "",
+    "to-title-case": "",
+    "underscore": "",
+    "marked": "",
+    "rss": ""
+  },
+  "devDependencies": {
+    "LiveScript": ""
+  }
+}

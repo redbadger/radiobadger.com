@@ -1,0 +1,136 @@
+@import url("reset.css");
+@import url("typeplate.css");
+@import url("fonts.css");
+@import "_grid.less";
+@import "_header.less";
+
+@black: #444;
+
+// Mixins
+
+.bold() {
+  font-family: 'charis_silbold', 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif';
+}
+
+.normal() {
+  font-family: 'charis_silregular', 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif';
+}
+
+html {
+  font-family: 'charis_silregular', 'Book Antiqua', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif';
+}
+
+body {
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+main {
+  .row();
+}
+
+.post-container {
+  .column(10);
+  .push(1);
+
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-bottom: 80px;
+
+  .title {
+    .normal();
+  }
+
+  .read-more {
+    text-indent: 1.5em;
+  }
+
+  a {
+    .bold();
+    text-decoration: none;
+    color: #444;
+  }
+
+  ul, ol {
+    margin-bottom: 1.5em;
+  }
+
+  ul {
+    li {
+      list-style-type: square;
+      list-style-position: inside;
+      text-indent: 1.5em;
+    }
+  }
+
+  ol {
+    li {
+      list-style-type: decimal;
+      list-style-position: inside;
+      text-indent: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .post-container {
+    padding-bottom: 80px;
+    .column(8);
+    .push(2);
+  }
+}
+
+.index-page {
+  .post-container {
+  }
+}
+
+.post-container {
+  blockquote {
+    position: relative;
+    padding: 1em;
+  }
+  blockquote:before,
+  blockquote:after {
+    height: 1em;
+    opacity: 0.15;
+    position: absolute;
+    font-size: 3.5em;
+    color: #dc976e;
+  }
+  blockquote:before {
+    content: '“';
+    top: 0;
+    left: 0;
+  }
+  blockquote:after {
+    content: '”';
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.post-preview, .post-container p {
+  text-align: left;
+}
+
+footer {
+  .row();
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .rss-feed {
+    .column(8);
+    .push(2);
+    text-align: center;
+
+    .rss-feed-link {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

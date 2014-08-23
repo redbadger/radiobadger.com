@@ -1,0 +1,22 @@
+include mixins/header
+include mixins/footer
+include mixins/scripts
+include mixins/meta
+
+doctype html
+html
+  head
+    title
+      block title
+      | Alexander Savin blog
+
+    block meta
+    mixin meta()
+
+    link(rel='stylesheet', href='/css/style.css')
+
+  body
+    +header()
+    block content
+    +footer()
+    +scripts
