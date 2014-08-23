@@ -1,6 +1,6 @@
 # Radio Badger blog
 
-Build status: ![build status](https://travis-ci.org/asavin/alexsavin.me.svg?branch=master)
+Build status: ![build status](https://travis-ci.org/redbadger/radiobadger.com.svg)
 
 This blog is deployed to [radiobadger.com](http://radiobadger.com)
 
