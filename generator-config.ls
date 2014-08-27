@@ -22,7 +22,6 @@ posts = []
 make-post = ->
   post = {}
   mark = []
-  console.log cut-mark.test it.body
 
   # Check if we have cut mark
   if (cut-mark.test it.body) is true
@@ -79,7 +78,6 @@ module.exports =
 
   globals: (items) ->
     console.log "Preparing globals..."
-    console.log posts
 
     fs.writeFile 'out/feed.xml', (export-feed posts), (err) ->
       throw err if err
