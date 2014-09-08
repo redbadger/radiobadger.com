@@ -19,7 +19,8 @@
     "to-title-case": "",
     "underscore": "",
     "marked": "",
-    "rss": ""
+    "rss": "",
+    "podcast": ""
   },
   "devDependencies": {
     "LiveScript": ""

@@ -1,5 +1,5 @@
 
-require! <[ marked to-slug-case rss moment ]>
+require! <[ marked to-slug-case rss podcast moment ]>
 
 # configuration options
 
