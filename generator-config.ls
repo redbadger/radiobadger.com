@@ -90,7 +90,10 @@ export-podcast-feed = ->
             { 'itunes:name': 'Alexander Savin' }
             { 'itunes:email': 'alex.savin@red-badger.com' }
           ]}
-          { 'itunes:image': 'http://radiobadger.com/images/badger-radio-album-cover.png' }
+          { 'itunes:image': [
+            _attr:
+              href: 'http://radiobadger.com/images/badger-radio-album-cover.png'
+          ]}
           { 'itunes:explicit': 'yes' }
           { 'itunes:category': [
             _attr:
@@ -120,7 +123,10 @@ podcast-items = ->
         { 'itunes:subtitle': cast.attributes.subtitle }
         { 'itunes:summary': cast.attributes.summary }
         { 'itunes:duration': cast.attributes.duration }
-        { 'itunes:image': cast.attributes.album-cover }
+        { 'itunes:image': [
+          _attr:
+            href: cast.attributes.album-cover
+        ]}
         { description: cast.attributes.summary }
         { url: cast.attributes.enclosure }
         { guid: cast.attributes.guid }
