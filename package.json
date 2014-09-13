@@ -20,7 +20,7 @@
     "underscore": "",
     "marked": "",
     "rss": "",
-    "podcast": ""
+    "podcastgen": ""
   },
   "devDependencies": {
     "LiveScript": ""

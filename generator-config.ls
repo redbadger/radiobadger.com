@@ -1,5 +1,5 @@
 
-require! <[ marked to-slug-case rss podcast moment ]>
+require! <[ marked to-slug-case rss xml moment ]>
 
 # configuration options
 
@@ -18,6 +18,7 @@ is-post = is-type '/posts/'
 
 documents-by-path = {}
 posts = []
+podcasts = []
 
 make-post = ->
   post = {}
@@ -43,8 +44,6 @@ make-post = ->
   post
 
 export-feed = ->
-
-
   rssfeed = new rss do
     title: 'Radio Badger podcast'
     description: 'Episodes of the Radio Badger podcast'
@@ -52,7 +51,6 @@ export-feed = ->
     feed_url: 'http://radiobadger.com/feed.xml'
     image_url: 'http://radiobadger.com/images/rss.png'
     copyright: 'Creative Commons Attribution 4.0 International (CC BY 4.0)'
-    #author: 'Alexander Savin'
 
   for post in it
     rssfeed.item {
@@ -64,6 +62,76 @@ export-feed = ->
 
   rssfeed.xml!
 
+export-podcast-feed = ->
+  console.log 'exporting podcast feed'
+  cast-items = podcast-items it
+
+  podcast-feed =
+    rss: [
+      {
+        _attr:
+          'xmlns:itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+          version: '2.0'
+      }
+      {
+        channel: [
+          { title: 'Radio Badger tech podcast' }
+          { link: 'http://radiobadger.com/' }
+          { language: 'en-us' }
+          { copyright: '2014 Alexander Savin, Roisi Proven and Robbie McCorkell' }
+          { 'itunes:subtitle': 'Show on tech, art, games and life in London' }
+          { 'itunes:author': 'Alexander Savin, Roisi Proven and Robbie McCorkell' }
+          { 'itunes:summary': 'Radio Badger is a podcast on tech, art, games and life in London, broadcasted from the shed in the middle of Silicon Roundabout in Shoreditch.' }
+          { description: 'Radio Badger is a podcast on tech, art, games and life in London, broadcasted from the shed in the middle of Silicon Roundabout in Shoreditch.' }
+          { 'itunes:owner': [
+            { 'itunes:name': 'Alexander Savin' }
+            { 'itunes:email': 'alex.savin@red-badger.com' }
+          ]}
+          { 'itunes:image': 'http://radiobadger.com/images/badger-radio-album-cover.png' }
+          { 'itunes:explicit': 'yes' }
+          { 'itunes:category': [
+            _attr:
+              text: 'Technology'
+          ]}
+          { 'itunes:category': [
+            _attr:
+              text: 'Gadgets'
+          ]}
+        ]
+      }
+    ]
+
+  podcast-feed.rss.1.channel = union podcast-feed.rss.1.channel, cast-items
+
+  "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n#{xml podcast-feed, true}"
+
+podcast-items = ->
+  console.log 'Rendering podcast items...'
+  items = []
+  for cast in it
+    items.push do
+      item: [
+        { title: cast.attributes.podcast-title }
+        { author: cast.attributes.author }
+        { 'itunes:author': cast.attributes.author }
+        { 'itunes:subtitle': cast.attributes.subtitle }
+        { 'itunes:summary': cast.attributes.summary }
+        { 'itunes:duration': cast.attributes.duration }
+        { 'itunes:image': cast.attributes.album-cover }
+        { description: cast.attributes.summary }
+        { url: cast.attributes.enclosure }
+        { guid: cast.attributes.guid }
+        { pub-date: moment cast.attributes.date .format 'ddd, D MMM YYYY HH:mm:ss ZZ' }
+        { enclosure: [
+          _attr:
+            url: cast.attributes.enclosure
+            type: 'audio/mpeg'
+            length: cast.attributes.length
+        ]}
+      ]
+
+  items
+
 module.exports =
 
   prepare: (items) ->
@@ -72,6 +140,8 @@ module.exports =
     items |> each (item) ->
       | is-post item
         posts.push (make-post item)
+        if item.attributes.podcast-title?
+          podcasts.push item
 
       console.log item.path
       documents-by-path[item.path] = item
@@ -81,6 +151,9 @@ module.exports =
 
     fs.writeFile 'out/feed.xml', (export-feed posts), (err) ->
       throw err if err
+
+    fs.writeFile 'out/podcast-feed.xml', (export-podcast-feed podcasts), (err) ->
+        throw err if err
 
     title: ->
       if it.title  then "#{it.title} | #site-title" else site-title
