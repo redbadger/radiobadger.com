@@ -1,7 +1,7 @@
 {
   "name": "alexsavin",
   "version": "0.1.0",
-  "description": "Personal blog",
+  "description": "Radio Badger blog",
   "dependencies": {
     "LiveScript": "^1.2.0",
     "bluebird": "",
@@ -20,7 +20,7 @@
     "underscore": "",
     "marked": "",
     "rss": "",
-    "podcastgen": ""
+    "xml": ""
   },
   "devDependencies": {
     "LiveScript": ""

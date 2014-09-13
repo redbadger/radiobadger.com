@@ -62,6 +62,9 @@ export-feed = ->
 
   rssfeed.xml!
 
+#
+# Might be a great idea to move this into a separate NPM
+#
 export-podcast-feed = ->
   console.log 'exporting podcast feed'
   cast-items = podcast-items it
