@@ -82,6 +82,7 @@ export-podcast-feed = ->
           { link: 'http://radiobadger.com/' }
           { language: 'en-us' }
           { copyright: '2014 Alexander Savin, Roisi Proven and Robbie McCorkell' }
+          { pub-date: moment!.format 'ddd, D MMM YYYY HH:mm:ss ZZ' }
           { 'itunes:subtitle': 'Show on tech, art, games and life in London' }
           { 'itunes:author': 'Alexander Savin, Roisi Proven and Robbie McCorkell' }
           { 'itunes:summary': 'Radio Badger is a podcast on tech, art, games and life in London, broadcasted from the shed in the middle of Silicon Roundabout in Shoreditch.' }
