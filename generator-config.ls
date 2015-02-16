@@ -156,6 +156,7 @@ module.exports =
         posts.push (make-post item)
         if item.attributes.podcast-title?
           podcasts.push item
+      item.attributes.date = format-date item.attributes.date
 
       console.log item.path
       documents-by-path[item.path] = item
