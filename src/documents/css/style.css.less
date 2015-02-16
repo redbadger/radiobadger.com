@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0 auto;
+  width: 98%;
 
   a {
     text-decoration: none;
@@ -53,6 +54,7 @@ main {
   border-top: 1px solid #eee;
   padding-top: 20px;
   margin-bottom: 80px;
+  position: relative;
 
   .title {
     .normal();
@@ -132,6 +134,29 @@ main {
   text-align: left;
 }
 
+.date-bubble {
+  position: absolute;
+  left: -60px;
+  top: 24px;
+  width: 40px;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #333;
+  padding: 2px;
+  color: #eee;
+  border-radius: 5px;
+}
+
+@media (max-width: 799px) {
+  .post-container {
+    .date-bubble {
+      position: static;
+      width: 100px;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
 footer {
   .row();
   margin-top: 40px;
@@ -150,20 +175,4 @@ footer {
   }
 }
 
-#liveblog {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-
-  &>div {
-    width: 80%;
-    display: inline-block;
-    text-align: left;
-  }
-
-  .blogdiv p {
-    padding-bottom: 10px;
-    display: block;
-  }
-}
 

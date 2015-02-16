@@ -4,6 +4,8 @@ block content
 
   main.base
     div.post-container
+      div.date-bubble
+        | #{document.date}
       h4.title
         | #{document.name}
       div!= document.output

@@ -39,9 +39,13 @@ make-post = ->
   post.title = it.attributes.name
   post.url = it.attributes.url
   post.date = it.attributes.date
+  post.postdate = format-date it.attributes.date
 
 
   post
+
+format-date = ->
+  moment it .format 'DD MMM YYYY'
 
 export-feed = ->
   rssfeed = new rss do
