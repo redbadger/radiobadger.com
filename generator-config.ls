@@ -41,6 +41,9 @@ make-post = ->
   post.date = it.attributes.date
   post.postdate = format-date it.attributes.date
 
+  if it.attributes.enclosure
+    post.enclosure = it.attributes.enclosure
+
 
   post
 
