@@ -6,13 +6,6 @@ mixin postList(posts)
       a.header-link(href=post.url)
         h4.title!= post.title
       div.post-preview!= post.preview
-      if post.enclosure
-        div.audio
-          h4.title
-            | Play episode
-          audio(controls="controls" preload="none")
-            | Your browser does not support the audio element.
-            source(src=post.enclosure type="audio/mp3")
       if post.readMore
         div.read-more
           a(href=post.url) Read more...
