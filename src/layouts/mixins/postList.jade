@@ -10,7 +10,7 @@ mixin postList(posts)
         div.audio
           h4.title
             | Play episode
-          audio(controls="controls")
+          audio(controls="controls" preload="none")
             | Your browser does not support the audio element.
             source(src=post.enclosure type="audio/mp3")
       if post.readMore

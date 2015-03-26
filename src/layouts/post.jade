@@ -13,6 +13,6 @@ block content
         div.audio
           h4.title
             | Play episode
-          audio(controls="controls")
+          audio(controls="controls" preload="none")
             | Your browser does not support the audio element.
             source(src=document.enclosure type="audio/mp3")
