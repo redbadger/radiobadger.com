@@ -1,7 +1,7 @@
 ---
 name : Badger Don’t Care About Electronic Cat Flaps
 podcastTitle: Episode 30 or Badger Don't Care About Electronic Cat Flaps
-date: Wed Feb 17 22:39:35 2016 (UTC+0000)
+date: 2016-02-17T21:18:14+0000
 layout: post.jade
 author: Alexander Savin, Robbie McCorkell
 subtitle: Electronic cat flaps, Prime Now experience when living in East London, iPad Pro live review, Apple Pencil latency review, curved imaging sensors, Canon EOS 750D review, 360 VR documentary film project from Chernobyl, booking your holidays in Chernobyl, secret seed store on the island of Svalbard in Arctic Ocean. More details and links with shownotes can be found on our site http://www.radiobadger.com

@@ -11,7 +11,7 @@
     "front-matter": "~0.2.0",
     "http-proxy": "1.0.3",
     "js-yaml": "~3.0.2",
-    "moment": "~2.7.0",
+    "moment": "~2.11.0",
     "prelude-ls": "1.0.3",
     "prompt": "~0.2.13",
     "require-dir": "~0.1.0",

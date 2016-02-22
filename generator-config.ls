@@ -3,8 +3,9 @@ require! <[ marked to-slug-case rss xml moment ]>
 
 # configuration options
 
-site-title = "Radio Badger"
-cut-mark = /\nMore...\n/i
+const site-title = "Radio Badger"
+const cut-mark = /\nMore...\n/i
+const posts-per-page = 5
 
 # internal helpers
 
@@ -123,6 +124,9 @@ podcast-items = ->
   console.log 'Rendering podcast items...'
   items = []
   for cast in it
+    duration = moment.duration cast.attributes.duration .asSeconds! + ''
+    duration = duration.replace '.' ''
+    console.log duration
     items.push do
       item: [
         { title: cast.attributes.podcast-title }
@@ -130,7 +134,7 @@ podcast-items = ->
         { 'itunes:author': cast.attributes.author }
         { 'itunes:subtitle': cast.attributes.subtitle }
         { 'itunes:summary': cast.attributes.summary }
-        { 'itunes:duration': cast.attributes.duration }
+        { 'itunes:duration': duration }
         { 'itunes:image': [
           _attr:
             href: cast.attributes.album-cover
@@ -138,7 +142,7 @@ podcast-items = ->
         { description: cast.attributes.summary }
         { url: cast.attributes.enclosure }
         { guid: cast.attributes.guid }
-        { pub-date: moment cast.attributes.date .format 'ddd, D MMM YYYY HH:mm:ss ZZ' }
+        { pub-date: moment cast.attributes.fulldate .format 'ddd, D MMM YYYY HH:mm:ss ZZ' }
         { enclosure: [
           _attr:
             url: cast.attributes.enclosure
@@ -159,6 +163,7 @@ module.exports =
         posts.push (make-post item)
         if item.attributes.podcast-title?
           podcasts.push item
+      item.attributes.fulldate = item.attributes.date
       item.attributes.date = format-date item.attributes.date
 
       console.log item.path

@@ -1,7 +1,7 @@
 ---
 name : Badger Don’t Care About Quality of Bombshelters In Prague
 podcastTitle: Episode 28 or Badger Don't Care About Quality of Bombshelters In Prague
-date: Wed Dec  9 23:09:37 2015 (UTC+0000)
+date: 2015-12-09T21:18:14+0000
 layout: post.jade
 author: Alexander Savin, Robbie McCorkell, Viktor Charypar
 subtitle: Viktor travels to New York and Dublin, comparison of underground shelters in London, Prague and Helsinki, empty floors in skyscrapers in the middle of Manhattan, ancient laws protecting London skyline, reflecting on the life changing tech innovations of the year, mesh computing, project Etherium, blockchains and multiseeded master keys
@@ -9,7 +9,7 @@ summary: In this episode Robbie McCorkell, Alex Savin and Viktor Charypar talk a
 image: http://radiobadger.com/images/badger-radio-album-cover.png
 enclosure: http://radiobadger.com/episodes/Badgercast-episode-28.mp3
 guid: http://radiobadger.com/episodes/Badgercast-episode-28.mp3
-duration: 1:07:50
+duration: 01:07:50
 length: 54923373
 albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
 ---
