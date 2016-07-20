@@ -7,8 +7,8 @@ author: Alexander Savin, Robbie McCorkell, Monika Ferencz, Amy Crimmens
 subtitle: More details and links with shownotes can be found on our site http://www.radiobadger.com
 summary: In this episode Robbie McCorkell, Alexander Savin, Monika Ferencz and introducing Amy Crimmens talk about details on the upcoming React London conference, recent Apple WWDC impressions, Pebble 2 vs upcoming new Apple Watch, differential privacy, impressions on JSConf in Budapest, impressions on Budapest in general, Valve's Destinations VR and optionality of having sex in modern videogames . More details and links with shownotes can be found on our site http://www.radiobadger.com This episode is once again recorded in a cozy shed next to the Old Street roundabout in London.
 image: http://radiobadger.com/images/badger-radio-album-cover.png
-enclosure: http://radiobadger.com/episodes/Badgercast-episode-36.mp3
-guid: http://radiobadger.com/episodes/Badgercast-episode-36.mp3
+enclosure: http://radiobadger.com/episodes/Badgercast-episode-37.mp3
+guid: http://radiobadger.com/episodes/Badgercast-episode-37.mp3
 duration: 1:08:02
 length: 45591423
 albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
