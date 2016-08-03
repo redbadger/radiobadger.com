@@ -1,11 +1,11 @@
 ---
-name : 
-podcastTitle: Episode 39 on 
+name : Digletts, Tesla, semiprime numbers and shirtless German men on bicycles
+podcastTitle: Episode 39 on Digletts, Tesla, semiprime numbers and shirtless German men on bicycles
 date: 2016-08-03T11:54:10+01:00
 layout: post.jade
 author: Alexander Savin, Robbie McCorkell, Monika Ferencz
-subtitle: . More details and links with shownotes can be found on our site http://www.radiobadger.com
-summary: In this episode Robbie McCorkell, Alexander Savin and Monika Ferencz talk about . More details and links with shownotes can be found on our site http://www.radiobadger.com This episode is once again recorded in a cozy shed next to the Old Street roundabout in London.
+subtitle: Where to find Digletts in London, PoGo catch up, Wikipedia vs Wolphram Alpha, semiprime numbers, Tesla master plan part 2 review, Tesla fleet, recent trip to Germany, getting your walking stick pass the security in the airport, Star Trek movie review, Mr Robot, Warcraft the Movie, Utopia. More details and links with shownotes can be found on our site http://www.radiobadger.com
+summary: In this episode Robbie McCorkell, Alexander Savin and Monika Ferencz talk about where to find Digletts in London, PoGo catch up, Wikipedia vs Wolphram Alpha, semiprime numbers, Tesla master plan part 2 review, Tesla fleet, recent trip to Germany, getting your walking stick pass the security in the airport, Star Trek movie review, Mr Robot, Warcraft the Movie, Utopia. More details and links with shownotes can be found on our site http://www.radiobadger.com This episode is once again recorded in a cozy shed next to the Old Street roundabout in London.
 image: http://radiobadger.com/images/badger-radio-album-cover.png
 enclosure: http://radiobadger.com/episodes/Badgercast-episode-39.mp3
 guid: http://radiobadger.com/episodes/Badgercast-episode-39.mp3
