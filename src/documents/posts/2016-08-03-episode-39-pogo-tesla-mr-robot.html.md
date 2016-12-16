@@ -16,7 +16,7 @@ albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
 
 Episode 39 of our podcast is released and available for [download](http://radiobadger.com/episodes/Badgercast-episode-39.mp3) (MP3, 44mb).
 
-This episode is also available on [Soundcloud](https://soundcloud.com/karismafilms/radio-badger-episode-39-pogo-startrek-tesla), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
+This episode is also available on [Soundcloud](https://soundcloud.com/radiobadger/radio-badger-episode-39-pogo-startrek-tesla), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
 
 #### Shownotes
 

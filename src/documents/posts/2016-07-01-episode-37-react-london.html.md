@@ -16,7 +16,7 @@ albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
 
 Episode 37 of our podcast is released and available for [download](http://radiobadger.com/episodes/Badgercast-episode-37.mp3) (MP3, 46mb).
 
-This episode is also available on [Soundcloud](https://soundcloud.com/karismafilms/radio-badger-episode-37-london-react-jsconf-budapest), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
+This episode is also available on [Soundcloud](https://soundcloud.com/radiobadger/radio-badger-episode-37-london-react-jsconf-budapest), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
 
 #### Shownotes
 

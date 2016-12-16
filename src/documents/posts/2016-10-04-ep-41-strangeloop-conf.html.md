@@ -16,7 +16,7 @@ albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
 
 Episode 41 of our podcast is released and available for [download](http://radiobadger.com/episodes/Badgercast-episode-41.mp3) (MP3, 38mb).
 
-This episode is also available on [Soundcloud](https://soundcloud.com/karismafilms/radio-badger-episode-41-strangeloop-conf), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
+This episode is also available on [Soundcloud](https://soundcloud.com/radiobadger/radio-badger-episode-41-strangeloop-conf), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
 
 #### Shownotes
 

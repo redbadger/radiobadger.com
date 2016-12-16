@@ -16,7 +16,7 @@ albumCover: http://radiobadger.com/images/badger-radio-album-cover.png
 
 Episode 36 of our podcast is released and available for [download](http://radiobadger.com/episodes/Badgercast-episode-36.mp3) (MP3, 39mb).
 
-This episode is also available on [Soundcloud](https://soundcloud.com/karismafilms/radio-badger-episode-36), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
+This episode is also available on [Soundcloud](https://soundcloud.com/radiobadger/radio-badger-episode-36), [iTunes](https://itunes.apple.com/gb/podcast/radio-badger-tech-podcast/id918884643?mt=2) and Sticher.
 
 #### Shownotes
 
@@ -25,8 +25,8 @@ In this episode [@robbiemccorkell](https://twitter.com/robbiemccorkell) and [@ka
 * React Europe in Paris - impressions by Robbie
 * Apocalyptic floods in Paris
 * Badgers take over a bar in central Paris
-* GraphQL at Facebook talk 
-* Building app with [Exponent](https://www.youtube.com/watch?v=cI9bDvDEsYE) and React native 
+* GraphQL at Facebook talk
+* Building app with [Exponent](https://www.youtube.com/watch?v=cI9bDvDEsYE) and React native
 * Ootsi.de Chrome Extension
 * Flow and Nuclide update
 * Babel and optimizing React render flow
