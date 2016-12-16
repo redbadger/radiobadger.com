@@ -1,5 +1,5 @@
 mixin postList(posts)
-  each post in posts
+  each post in fullPosts
     div.post-container
       div.date-bubble
         | #{post.postdate}
@@ -9,3 +9,14 @@ mixin postList(posts)
       if post.readMore
         div.read-more
           a(href=post.url) Read more...
+  each post in collapsedPosts
+    div.post-container.collapsed
+      div.date-bubble
+        | #{post.postdate}
+      a.header-link(href=post.url)
+        h4.title!= post.podcastTitle
+      div.episode-link
+        a(href=post.enclosure) Download MP3
+      div.post-preview!= post.summary
+      div.read-more
+        a(href=post.url) Read full shownotes and episode links...

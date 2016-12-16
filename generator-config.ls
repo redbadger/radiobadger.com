@@ -37,7 +37,9 @@ make-post = ->
     post.preview = post.body
     post.read-more = false
 
+  post.summary = it.attributes.summary
   post.title = it.attributes.name
+  post.podcastTitle = it.attributes.podcastTitle
   post.url = it.attributes.url
   post.date = it.attributes.date
   post.postdate = format-date it.attributes.date
@@ -171,6 +173,9 @@ module.exports =
 
   globals: (items) ->
     console.log "Preparing globals..."
+    full-posts = reverse posts |> slice(0, 5)
+    collapsed-posts = reverse posts |> slice(6, posts.length)
+    console.log 'Collapsed posts' + collapsed-posts
 
     fs.writeFile 'out/feed.xml', (export-feed posts), (err) ->
       throw err if err
@@ -181,4 +186,5 @@ module.exports =
     title: ->
       if it.title  then "#{it.title} | #site-title" else site-title
 
-    posts: reverse posts
+    fullPosts: full-posts
+    collapsedPosts: collapsed-posts
