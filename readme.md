@@ -1,3 +1,5 @@
+# This repo is officially abandoned and should be removed
+
 # Radio Badger blog
 
 Build status: ![build status](https://travis-ci.org/redbadger/radiobadger.com.svg)
